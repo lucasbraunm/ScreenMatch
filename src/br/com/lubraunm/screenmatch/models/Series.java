@@ -6,6 +6,11 @@ public class Series extends Content {
     private int episodesPerSeason;
     private double episodeDuration;
 
+    public Series(String title, int releaseYear) {
+        super(title, releaseYear);
+    }
+
+
     public int getSeasons() {
         return seasons;
     }

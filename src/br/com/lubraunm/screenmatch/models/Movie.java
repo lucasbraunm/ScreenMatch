@@ -3,7 +3,12 @@ package br.com.lubraunm.screenmatch.models;
 import br.com.lubraunm.screenmatch.utils.Rateable;
 
 public class Movie extends Content implements Rateable {
+
     private String director;
+
+    public Movie(String title, int releaseYear) {
+        super(title, releaseYear);
+    }
 
     public String getDirector() {
         return director;
